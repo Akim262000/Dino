@@ -1,0 +1,217 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-sandy-brown {
+  background-color: #8D6B4A;
+}
+
+.bg-earthy-brown {
+  background-color: #5D4037;
+}
+
+.bg-green-moss {
+  background-color: #6D8B6F;
+}
+
+.bg-terracotta {
+  background-color: #A1665E;
+}
+
+.bg-coal {
+  background-color: #3E2C23;
+}
+
+.text-sandy-brown {
+  color: #8D6B4A;
+}
+
+.text-earthy-brown {
+  color: #5D4037;
+}
+
+.text-green-moss {
+  color: #6D8B6F;
+}
+
+.text-terracotta {
+  color: #A1665E;
+}
+
+.text-coal {
+  color: #3E2C23;
+}
+
+.border-earthy-brown {
+  border: 1px solid #5D4037;
+}
+
+.font-48 {
+  font-size: 48px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.br-24 {
+  border-radius: 24px;
+}
+
+.br-12 {
+  border-radius: 12px;
+}
+
+.top-image {
+  background-image: url(/images/top-background.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+.about img {
+  border-radius: 24px;
+}
+
+.dino-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.dino-slider .slick-slide {
+  margin: 0 10px;
+}
+
+.dino-slider .slick-list {
+  margin: 0 -10px;
+}
+
+.dino-slider .slick-track {
+  margin-top: 48px;
+}
+
+.dino-slider .slick-prev::before,
+.dino-slider .slick-next::before {
+  color: #000;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+
+.dino-prev {
+  background-image: url(/images/arrow-left.png);
+  color: #fff;
+  background-size: 20px 20px;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 2px solid #8D6B4A;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+.dino-next {
+  background-image: url(/images/arrow-rihgt.png);
+  background-size: 20px 20px;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 2px solid #8D6B4A;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 36px;
+  height: 36px;
+}
+
+.dino-prev:hover, 
+.dino-next:hover {
+  opacity: .7;
+}
+
+.slick-dots li {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 5px!important;
+}
+.slick-dots {
+    bottom: -20px !important;
+}
+
+
+/* Стили поп‑апа */
+.popup {
+  display: none; /* Скрыт по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.active {
+  display: flex; /* Показываем при классе active */
+}
+
+.popup-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #5D4037;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .popup-content {
+    max-width: 95%;
+    max-height: 85%;
+  }
+}
